@@ -1,13 +1,17 @@
 import { useState } from 'react'
-import Icon from './components/Icon.tsx'
+import Categories from './components/Categories.tsx'
 
 function App() {
   const [isExpanded, setIsExpanded] = useState(false)
   return (
-    <div>
-      <Icon iconId='credit-cards' />
-      <Icon iconId='home-loans' />
-      <Icon iconId='health-insurance' />
+    <div className='homeSection'>
+      <div className='content'>
+        <h2>Join 2 million+ Australians finding better</h2>
+        <p>
+          Finder's team of 40+ experts will help you find the right choices in over 100 categories.
+        </p>
+        <Categories expanded={isExpanded} />
+      </div>
     </div>
   )
 }
