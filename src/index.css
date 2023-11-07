@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 *,
 *::before,
 *::after {
@@ -26,32 +25,30 @@ body {
   height: 100%;
 }
 
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
 .homeSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 6.4rem 0 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 0.9375em;
 }
 
 .content {
-  margin: 0 auto;
+  margin: 2.4rem auto;
   width: 112rem;
 }
 
 .content h2 {
+  color: #18304b;
   font-size: 3.2rem;
   margin: 0 0 0.8rem;
+  line-height: 3.84rem;
+  font-weight: 700;
 }
 
 .content p {
+  color: #6c7881;
+  font-weight: 400;
   font-size: 2rem;
   margin: 0 0 1.6rem;
 }
@@ -59,6 +56,7 @@ video {
 .tiles {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .tile {
@@ -74,6 +72,7 @@ video {
   border: 1px solid #e3e5e8;
   border-radius: 1.6rem;
   margin-bottom: 2.4rem;
+  cursor: pointer;
 }
 
 .tile:hover {
@@ -89,4 +88,37 @@ video {
   line-height: 2.4rem;
   padding: 0 1rem;
   font-weight: 500;
+}
+
+.homeSection__content {
+  margin: 2.4rem 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer button {
+  color: #0271e1;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+button svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0271e1;
 }
